@@ -36,7 +36,7 @@ public class Server {
             }
         }
     }
-    ArrayList<ConnectionThread> conns = new ArrayList<>();
+    ArrayList<ConnectionThread> conns = new ArrayList<ConnectionThread>();
     public Server()
     {
         ServerSocket serverSocket = null;
