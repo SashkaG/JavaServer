@@ -5,7 +5,11 @@
   <groupId>org.example</groupId>
   <artifactId>herokujavasample</artifactId>
   <version>1.0-SNAPSHOT</version>
-
+  
+   <properties>
+    <java.version>7.2.1</java.version>
+  </properties>
+  
   <build>
     <plugins>
       <plugin>
