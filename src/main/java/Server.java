@@ -48,7 +48,7 @@ public class Server {
             System.out.print(serverSocket.getLocalPort()+"\n");
             System.out.print(serverSocket.getLocalSocketAddress()+"\n");
             System.out.print(serverSocket.getReuseAddress()+"\n");
-            System.out.print(InetAddress.getLoopbackAddress()"\n");
+            System.out.print(InetAddress.getLoopbackAddress()+"\n");
             new AceptedThread(this,serverSocket).start();
         } catch (IOException e) {
             e.printStackTrace();
