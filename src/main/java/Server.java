@@ -42,7 +42,11 @@ public class Server {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(4040);
-            System.out.print("Done");
+            System.out.print("Done"+"\n");
+            System.out.print(serverSocket.getInetAddress()+"\n");
+            System.out.print(serverSocket.getLocalPort()+"\n");
+            System.out.print(serverSocket.getLocalSocketAddress()+"\n");
+            System.out.print(serverSocket.getReuseAddress()+"\n");
             new AceptedThread(this,serverSocket).start();
         } catch (IOException e) {
             e.printStackTrace();
