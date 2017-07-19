@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.net.InetAddress;
 
 public class Server {
     public static void main(String[] args) {
@@ -47,6 +48,7 @@ public class Server {
             System.out.print(serverSocket.getLocalPort()+"\n");
             System.out.print(serverSocket.getLocalSocketAddress()+"\n");
             System.out.print(serverSocket.getReuseAddress()+"\n");
+            System.out.print(InetAddress.getLocalHost()+"\n");
             new AceptedThread(this,serverSocket).start();
         } catch (IOException e) {
             e.printStackTrace();
